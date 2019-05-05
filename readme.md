@@ -44,7 +44,8 @@ Once your VPS is up and running and your Zyrk wallet has synced, you then need t
 
 1. Open your Zyrk Windows wallet.
 2. Click **Help** -> **Debug window** and then click on the **console** tab.
-3. Enter **getnewaddress MN1 masternode** and send **7500** ZYRK exactly.
+3. Enter **getnewaddress MN1 masternode** and send exactly **7500** ZYRK to this address.
+4. **Please note this address must start with an X not a Z**. If you have a **Z** address read above step again.
 4. Go to back into the **console** tab and type **masternode outputs**
 5. Copy this to the same place your copied your **Masternode Private Key** earlier.
 6. Go to %appdata%\Zyrk and create a file called **masternode.conf** and fill it with the following.
@@ -63,7 +64,7 @@ Restart your Windows wallet and go to the masternode tab. You should see your ma
 Click **Start all** and the status should change to **PRE_ENABLED**. After 15-30 minutes this should then change to **ENABLED**.
 ***
 
-## Checking Masternode Enabled
+## Checking if Masternode Enabled
 
 1. Log back into your VPS and type **zyrk-cli masternode status**
 2. If you see **Masternode successfully started** everything is setup correctly.
