@@ -1,5 +1,5 @@
 <p align="center">
-    ![logo](https://github.com/ZyrkProject/masternode-install/blob/master/images/header.png)
+    <img src="https://github.com/ZyrkProject/masternode-install/blob/master/images/header.png">
 </p>
 
 # Zyrk Masternode Setup Guide
@@ -58,3 +58,14 @@ Example masternode.conf
 ```
 MN1 127.0.0.1:19655 5J35uXCcNFaQByrnK4YEFqCPQErJ8SzU7QPyjFg5atiC4BH3yqU 3d4011efd463f55cad9021899b8c7b06494e27ba0d186cc2de39d6d0d0ebbb4d 0
 ```
+
+Restart your Windows wallet and go to the masternode tab. You should see your masternode sitting there with a status of **MISSING**.
+Click **Start all** and the status should change to **PRE_ENABLED**. After 15-30 minutes this should then change to **ENABLED**.
+***
+
+## Checking Masternode Enabled
+
+1. Log back into your VPS and type **zyrk-cli masternode status**
+2. If you see **Masternode successfully started** everything is setup correctly.
+3. Check the official block explorer to see if your masternode is listed - https://explorer.zyrk.io/masternodes
+4. You are now finished and should start receiving rewards in the next **1 - 3 hours**. 
