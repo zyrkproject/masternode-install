@@ -1,0 +1,1 @@
+![logo](https://github.com/ZyrkProject/masternode-install/blob/master/images/header.png)
