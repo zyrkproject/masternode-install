@@ -76,7 +76,7 @@ sudo ufw logging on
 echo "y" | sudo ufw enable
 sudo ufw status
 echo VPS firewall setup is completed.
-echo Downloading Zyrk Wallet v1.0.0...
+echo "Downloading Zyrk Wallet (v1.0.0)..."
 wget https://github.com/zyrkproject/zyrk-core/releases/download/1.0.0/zyrk-1.0.0-x86_64-linux-gnu.tar.gz
 tar -xvf zyrk-1.0.0-x86_64-linux-gnu.tar.gz
 chmod +x ./zyrkd
@@ -90,7 +90,7 @@ echo Configuring Zyrk Wallet configuration...
 RPCUSER=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
 RPCPASSWORD=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
 EXTIP=`curl -s4 icanhazip.com`
-echo Please enter your Masternode Privatekey (masternode genkey):
+echo "Please enter your Masternode Privatekey (masternode genkey):"
 read GENKEY
 mkdir -p /root/.zyrk && touch /root/.zyrk/zyrk.conf
 cat << EOF > /root/.zyrk/zyrk.conf
@@ -207,7 +207,7 @@ sudo ufw logging on
 echo "y" | sudo ufw enable
 sudo ufw status
 echo VPS firewall configured.
-echo Downloading Zyrk Wallet v1.0.0...
+echo "Downloading Zyrk Wallet (v1.0.0)..."
 wget https://github.com/zyrkproject/zyrk-core/releases/download/1.0.0/zyrk-1.0.0-x86_64-linux-gnu.tar.gz
 echo Updating Zyrk Wallet...
 tar -xvf zyrk-1.0.0-x86_64-linux-gnu.tar.gz
