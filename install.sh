@@ -76,7 +76,7 @@ sudo ufw logging on
 echo "y" | sudo ufw enable
 sudo ufw status
 echo VPS firewall setup is completed.
-echo Downloading Zyrk Wallet (1.0.0)...
+echo Downloading Zyrk Wallet v1.0.0...
 wget https://github.com/zyrkproject/zyrk-core/releases/download/1.0.0/zyrk-1.0.0-x86_64-linux-gnu.tar.gz
 tar -xvf zyrk-1.0.0-x86_64-linux-gnu.tar.gz
 chmod +x ./zyrkd
@@ -207,7 +207,7 @@ sudo ufw logging on
 echo "y" | sudo ufw enable
 sudo ufw status
 echo VPS firewall configured.
-echo Downloading Zyrk Wallet (1.0.0)...
+echo Downloading Zyrk Wallet v1.0.0...
 wget https://github.com/zyrkproject/zyrk-core/releases/download/1.0.0/zyrk-1.0.0-x86_64-linux-gnu.tar.gz
 echo Updating Zyrk Wallet...
 tar -xvf zyrk-1.0.0-x86_64-linux-gnu.tar.gz
