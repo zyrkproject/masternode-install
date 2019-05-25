@@ -76,14 +76,14 @@ sudo ufw logging on
 echo "y" | sudo ufw enable
 sudo ufw status
 echo VPS firewall setup is completed.
-echo "Downloading Zyrk Wallet (v1.1.0)..."
-wget https://github.com/zyrkproject/zyrk-core/releases/download/1.1.0/zyrk-1.1.0-x86_64-linux-gnu.tar.gz
-tar -xvf zyrk-1.1.0-x86_64-linux-gnu.tar.gz
-chmod +x ./zyrkd
-chmod +x ./zyrk-cli
-sudo cp zyrkd /usr/bin/zyrkd
-sudo cp zyrk-cli /usr/bin/zyrk-cli
-sudo rm -rf zyrk-1.1.0-x86_64-linux-gnu.tar.gz
+echo "Downloading Zyrk Wallet (v1.1.4)..."
+wget https://github.com/zyrkproject/zyrk-core/releases/download/1.1.4/zyrk-1.1.4-x86_64-linux-gnu.tar.gz
+tar -xvf zyrk-1.1.4-x86_64-linux-gnu.tar.gz
+chmod +x zyrk-1.1.4/bin/zyrkd
+chmod +x zyrk-1.1.4/bin/zyrk-cli
+sudo cp zyrk-1.1.4/bin/zyrkd /usr/bin/zyrkd
+sudo cp zyrk-1.1.4/bin/zyrk-cli /usr/bin/zyrk-cli
+sudo rm -rf zyrk-1.1.4-x86_64-linux-gnu.tar.gz
 echo Zyrk Wallet successfully installed.
 clear
 echo Configuring Zyrk Wallet configuration...
@@ -207,15 +207,15 @@ sudo ufw logging on
 echo "y" | sudo ufw enable
 sudo ufw status
 echo VPS firewall configured.
-echo "Downloading Zyrk Wallet (v1.1.0)..."
-wget https://github.com/zyrkproject/zyrk-core/releases/download/1.1.0/zyrk-1.1.0-x86_64-linux-gnu.tar.gz
+echo "Downloading Zyrk Wallet (v1.1.4)..."
+wget https://github.com/zyrkproject/zyrk-core/releases/download/1.1.4/zyrk-1.1.4-x86_64-linux-gnu.tar.gz
 echo Updating Zyrk Wallet...
-tar -xvf zyrk-1.1.0-x86_64-linux-gnu.tar.gz
-chmod +x ./zyrkd
-chmod +x ./zyrk-cli
-sudo cp zyrkd /usr/bin/zyrkd
-sudo cp zyrk-cli /usr/bin/zyrk-cli
-sudo rm -rf zyrk-1.1.0-x86_64-linux-gnu.tar.gz
+tar -xvf zyrk-1.1.4-x86_64-linux-gnu.tar.gz
+chmod +x zyrk-1.1.4/bin/zyrkd
+chmod +x zyrk-1.1.4/bin/zyrk-cli
+sudo cp zyrk-1.1.4/bin/zyrkd /usr/bin/zyrkd
+sudo cp zyrk-1.1.4/bin/zyrk-cli /usr/bin/zyrk-cli
+sudo rm -rf zyrk-1.1.4-x86_64-linux-gnu.tar.gz
 ./zyrkd
 echo Zyrk Wallet update complete. 
             ;;
