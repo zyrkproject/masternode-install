@@ -187,16 +187,16 @@ externalip=$EXTIP
 masternodeprivkey=$GENKEY
 EOF
 clear
-./zyrkd
+zyrkd
 echo Zyrk Wallet has been successfully configured and started.
-echo If you get a message asking to rebuild the database, run ./zyrkd -reindex
+echo If you get a message asking to rebuild the database, run zyrkd -reindex
 echo If you still have further issues please reach out a member in our Discord channel. 
 echo Ensure you use this Masternode Private Key on your Windows Wallet: $GENKEY
             ;;
 	    
     
          2)
-sudo ./zyrk-cli stop
+sudo zyrk-cli stop
 echo "! Stopping Zyrk Wallet !"
 echo Configuring VPS firewall...
 sudo apt-get install -y ufw
@@ -216,20 +216,20 @@ chmod +x zyrk-1.1.4/bin/zyrk-cli
 sudo cp zyrk-1.1.4/bin/zyrkd /usr/bin/zyrkd
 sudo cp zyrk-1.1.4/bin/zyrk-cli /usr/bin/zyrk-cli
 sudo rm -rf zyrk-1.1.4-x86_64-linux-gnu.tar.gz
-./zyrkd
+zyrkd
 echo Zyrk Wallet update complete. 
             ;;
          3)
-            ./zyrkd
+            zyrkd
             ;;
          4)
-            ./zyrk-cli stop
+            zyrk-cli stop
             ;;
 	     5)
-	        ./zyrk-cli masternode status
+	        zyrk-cli masternode status
 	        ;;
          6)
-	        ./zyrkd -reindex
+	        zyrkd -reindex
             ;;
 esac
 
